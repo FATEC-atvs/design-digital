@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(255, 254, 209);
+    border: 2px;
+    max-width: 100%;
+    margin: 0 auto; 
+}
+
+header{
+    background-color: rgb(223, 115, 43);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section > div{
+    background-color: antiquewhite;
+    border: 2px solid brown;
+    padding: 50px;
+    margin: 5px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+}
