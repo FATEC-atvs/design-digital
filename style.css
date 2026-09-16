@@ -12,20 +12,32 @@ header{
     align-items: center;
 }
 
-h1{
+nav{
+    color: black;
+}
+
+h1{ /* aqui é o título Hamburgueria*/
     display: center;
+    margin: 40px
 }
 
 section > div{
     background-color: rgb(255, 239, 180);
     border: 3px solid brown;
-    padding: 50px;
-    margin: 30px;
+    padding: 100px;
+    margin: 20px;
+    height: 50px; 
+    border-radius: 20px;
+    text-align: center;
 }
 
 .cards{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(226, 73, 43);
+    max-width: 225px;
+}
+
+h2{
+    text-align: center;
 }
