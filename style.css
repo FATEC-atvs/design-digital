@@ -12,16 +12,20 @@ header{
     align-items: center;
 }
 
+h1{
+    display: center;
+}
+
 section > div{
-    background-color: antiquewhite;
-    border: 2px solid brown;
+    background-color: rgb(255, 239, 180);
+    border: 3px solid brown;
     padding: 50px;
-    margin: 5px;
+    margin: 30px;
 }
 
 .cards{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: blueviolet;
+    background-color: rgb(226, 73, 43);
 }
