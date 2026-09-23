@@ -16,8 +16,11 @@ nav{
     color: black;
 }
 
+<<<<<<< HEAD
 /*body.carrossel{}*/
 
+=======
+>>>>>>> 5a762b2b98b17a96aabbef27ddb1ebb2d5b3daf3
 h1{ /* aqui é o título Hamburgueria*/
     display: center;
     margin: 40px
@@ -26,20 +29,42 @@ h1{ /* aqui é o título Hamburgueria*/
 section > div{
     background-color: rgb(255, 239, 180);
     border: 3px solid brown;
+<<<<<<< HEAD
     padding: 100px;
+=======
+>>>>>>> 5a762b2b98b17a96aabbef27ddb1ebb2d5b3daf3
     margin: 20px;
     height: 50px; 
     border-radius: 20px;
     text-align: center;
+<<<<<<< HEAD
+=======
+    width: 150px;
+    height: 150px; 
+    padding: 30px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+>>>>>>> 5a762b2b98b17a96aabbef27ddb1ebb2d5b3daf3
 }
 
 .cards{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+<<<<<<< HEAD
     max-width: 225px;
+=======
+    gap: 20px; 
+    margin: 0 auto;
+    padding: 20px;
+>>>>>>> 5a762b2b98b17a96aabbef27ddb1ebb2d5b3daf3
 }
 
 h2{
     text-align: center;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5a762b2b98b17a96aabbef27ddb1ebb2d5b3daf3
