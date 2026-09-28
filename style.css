@@ -16,11 +16,11 @@ padding: 20px 40px;
 
 h1 {
 margin: 0;
-color: white;
+color: rgb(255, 255, 255);
 }
 
 nav a {
-color: white;
+color: rgb(255, 255, 255);
 text-decoration: none;
 margin-left: 25px;
 font-size: 18px;
@@ -62,7 +62,7 @@ margin-bottom: 25px;
 }
 
 .carrossel img {
-height: 400px;
+height: 600px;
 object-fit: cover;
 }
 
@@ -90,7 +90,7 @@ gap: 20px;
 background-color: rgb(255, 239, 180);
 border: 3px solid brown;
 width: 180px;
-height: 150px;
+height: 230px;
 border-radius: 20px;
 
 display: flex;
@@ -106,3 +106,4 @@ font-size: 25px;
 .cards div:hover {
 transform: scale(1.03);
 }
+
