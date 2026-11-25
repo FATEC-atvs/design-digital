@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block titulo %}Quem Somos - BURGIVO{% endblock %}
+
+{% block conteudo %}
+<main class="container">
+
+    <section class="my-5">
+        <h2>Nossa História</h2>
+        <p>Tudo começou com uma obsessão simples: fazer um hambúrguer de verdade, sem atalhos. Cansados dos
+            processos industriais e dos lanches congelados, decidimos resgatar a essência da gastronomia artesanal
+            em São José dos Campos. O que começou na cozinha de casa, testando combinações de blends, selagens de
+            pães e tempos de chapa, transformou-se no nosso propósito diário: entregar uma experiência memorável em
+            cada pedido.</p>
+    </section>
+
+
+
+    <section class="my-5">
+        <h2>A Nossa Filosofia</h2>
+
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+                <img src="{{ url_for('static', filename='img/filosofia_burgivo.png') }}" class="img-fluid rounded" alt="Nossa filosofia">
+            </div>
+
+            <div class="col-12 col-md-6 mt-3 mt-md-0">
+                <p>
+                    Para nós, o artesanal não é apenas um rótulo, é um compromisso diário. Não usamos carnes
+                    ultraprocessadas nem ingredientes prontos. Tudo aqui é preparado à mão, do blend de carnes
+                    selecionadas ao molho especial da casa.
+                </p>
+
+
+                <p>
+                    Acreditamos que o segredo de um grande burger está na simplicidade executada com perfeição: a
+                    técnica Smash que garante aquela crosta dourada e suculenta, o pão brioche sempre macio e
+                    selado na manteiga, o queijo no ponto de derretimento ideal e o bacon bem crocante.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="my-5">
+        <h2>Nosso compromisso</h2>
+
+        <p class="mb-1">Artesanal</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-warning text-dark" style="width: 100%">100%</div>
+        </div>
+
+        <p class="mb-1">Sem congelados</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+        </div>
+
+        <p class="mb-1">Grelhado na hora</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 100%">100%</div>
+        </div>
+    </section>
+
+    <section class="my-5">
+        <div class="list-group">
+
+            <div class="list-group-item">
+                <strong>Frescor Diário</strong>
+                <p class="mb-0">Moldamos nossas carnes todos os dias. Nada entra no freezer.</p>
+            </div>
+
+            <div class="list-group-item">
+                <strong>Respeito ao Processo</strong>
+                <p class="mb-0">Cada burger é grelhado na hora, garantindo o máximo de sabor e suculência.</p>
+            </div>
+
+            <div class="list-group-item">
+                <strong>Carinho de Ponta a Ponta</strong>
+                <p class="mb-0">Do momento em que acendemos a chapa até a entrega na sua porta, cuidamos de cada
+                    detalhe.</p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+{% endblock %}

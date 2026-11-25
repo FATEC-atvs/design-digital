@@ -1,0 +1,254 @@
+/* GERAL */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background-color: rgb(158, 92, 25);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color:rgb(255, 170, 33);
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    background-color: rgb(176, 74, 6);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+
+.hero {
+    background: linear-gradient(rgb(176, 74, 6), rgb(255, 152, 48));
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+}
+
+.hero .btn {
+    margin: 5px;
+}
+
+
+
+
+
+.diferenciais {
+    color: white;
+    text-align: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+
+.diferenciais h3 {
+    color: rgb(255, 170, 33);
+    font-size: 22px;
+}
+
+
+
+
+
+.carrossel {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.carrossel h2 {
+    color: white;
+    text-align: center;
+}
+
+.carrossel .carousel {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carrossel img {
+    height: 600px;
+    object-fit: cover;
+}
+
+
+
+
+
+.produtos {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.card {
+    background-color: rgb(255, 239, 180);
+    border: 3px solid brown;
+    border-radius: 20px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    border-radius: 17px 17px 0 0;
+}
+
+.card-title {
+    color: rgb(150, 60, 20);
+    font-weight: bold;
+}
+
+.card strong {
+    color: rgb(150, 60, 20);
+    font-size: 24px;
+}
+
+
+
+
+.perguntas {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+
+
+
+.list-group-item {
+    background-color: rgb(255, 239, 180);
+}
+
+.list-group-item:hover {
+    background-color: rgb(255, 225, 140);
+}
+
+.btn-enviar {
+    background-color: rgb(223, 115, 43);
+    color: white;
+}
+
+.btn-enviar:hover {
+    background-color: rgb(150, 60, 20);
+    color: white;
+}
+
+
+
+/* botao do whats */
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    background-color: rgb(37, 211, 102);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp:hover {
+    background-color: rgb(30, 170, 80);
+    color: white;
+}
+
+
+
+/* rodape */
+
+footer {
+    background-color: rgb(150, 60, 20);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+
+
+/* ajuste para celular */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .carrossel img {
+        height: 250px;
+    }
+
+    .whatsapp {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+}

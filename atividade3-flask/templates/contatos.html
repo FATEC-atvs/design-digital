@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block titulo %}Contatos - BURGIVO{% endblock %}
+
+{% block conteudo %}
+<main class="container my-5">
+
+    <h2>Fale com a gente</h2>
+
+    <div class="row g-4">
+
+        <div class="col-12 col-md-6">
+            
+            <div class="list-group">
+
+                <div class="list-group-item">
+                    <strong>WhatsApp</strong>
+                    <p class="mb-0">(12) 91111-2222</p>
+                </div>
+
+
+                <div class="list-group-item">
+                    <strong>Instagram</strong>
+                    <p class="mb-0">@burgivo</p>
+                </div>
+
+
+                <div class="list-group-item">
+                    <strong>Endereço</strong>
+                    <p class="mb-0">Rua ?, nº ? – São José dos Campos/SP</p>
+                </div>
+
+
+                <div class="list-group-item">
+                    <strong>Horário de atendimento</strong>
+                    <p class="mb-0">Quarta a domingo, das 18h às 3h</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="col-12 col-md-6">
+            <h3 id="pedido">Faça seu pedido</h3>
+
+            <form>
+
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(12) 99999-9999" required>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="endereco" class="form-label">Endereço de entrega</label>
+                    <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Rua, número e bairro" required>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="hamburguer" class="form-label">Hambúrguer</label>
+                    <select class="form-select" id="hamburguer" name="hamburguer">
+                        <option>X-Bacon salada - R$ 29,90</option>
+                        <option>X-Salada - R$ 26,90</option>
+                        <option>X-Burger - R$ 22,90</option>
+                    </select>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="quantidade" class="form-label">Quantidade</label>
+                    <input type="number" class="form-control" id="quantidade" name="quantidade" value="1" min="1" max="20">
+                </div>
+
+                <div class="mb-3">
+                    <label for="observacao" class="form-label">Observações</label>
+                    <textarea class="form-control" id="observacao" name="observacao" rows="3" placeholder="Ex: sem cebola"></textarea>
+                </div>
+
+
+                <button type="submit" class="btn btn-enviar">Enviar pedido</button>
+
+
+            </form>
+        </div>
+
+    </div>
+</main>
+{% endblock %}
