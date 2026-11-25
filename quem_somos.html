@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos - Hamburgueria</title>
+    <title>Quem Somos - BURGIVO</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
+
     <header>
-        <figure>
-            <img alt="logo">
-            <h1>BURGIVO</h1>
-        </figure>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="quem_somos.html">Quem somos</a>
-            <a href="contatos.html">Contatos</a>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"> BURGIVO </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quem_somos.html">Quem somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contatos.html">Contatos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="container">
-        <section>
+
+        <section class="my-5">
             <h2>Nossa História</h2>
             <p>Tudo começou com uma obsessão simples: fazer um hambúrguer de verdade, sem atalhos. Cansados dos
                 processos industriais e dos lanches congelados, decidimos resgatar a essência da gastronomia artesanal
@@ -35,57 +43,84 @@
                 cada pedido.</p>
         </section>
 
+        <!-- Grid: imagem de um lado e texto do outro (no celular fica um embaixo do outro) -->
         <section class="my-5">
-
             <h2>A Nossa Filosofia</h2>
+            
 
-            <img src="./img/quem-somos/filosofia.jpg" class="img-fluid rounded" alt="Nossa filosofia">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <img src="./img/filosofia_burgivo.png" class="img-fluid rounded" alt="Nossa filosofia">
+                </div>
 
-            <p class="mt-3">
-                Para nós, o artesanal não é apenas um rótulo,
-                é um compromisso diário. Não usamos carnes
-                ultraprocessadas nem ingredientes prontos.
-                Tudo aqui é preparado à mão, do blend de carnes
-                selecionadas ao molho especial da casa.
-            </p>
+                <div class="col-12 col-md-6 mt-3 mt-md-0">
+                    <p>
+                        Para nós, o artesanal não é apenas um rótulo, é um compromisso diário. Não usamos carnes
+                        ultraprocessadas nem ingredientes prontos. Tudo aqui é preparado à mão, do blend de carnes
+                        selecionadas ao molho especial da casa.
+                    </p>
 
-            <p>
-                Acreditamos que o segredo de um grande burger está
-                na simplicidade executada com perfeição: a técnica
-                Smash que garante aquela crosta dourada e suculenta,
-                o pão brioche sempre macio e selado na manteiga,
-                o queijo no ponto de derretimento ideal e o bacon
-                bem crocante.
-            </p>
-
+                    <p>
+                        Acreditamos que o segredo de um grande burger está na simplicidade executada com perfeição: a
+                        técnica Smash que garante aquela crosta dourada e suculenta, o pão brioche sempre macio e
+                        selado na manteiga, o queijo no ponto de derretimento ideal e o bacon bem crocante.
+                    </p>
+                </div>
+            </div>
         </section>
-        <div class="list-group">
 
-            <div class="list-group-item">
-                <strong>Frescor Diário</strong>
-                <p>
-                    Moldamos nossas carnes todos os dias.
-                    Nada entra no freezer.
-                </p>
+        <!-- Progress bars -->
+        <section class="my-5">
+            <h2>Nosso compromisso</h2>
+
+            <p class="mb-1">Artesanal</p>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-warning text-dark" style="width: 100%">100%</div>
             </div>
 
-            <div class="list-group-item">
-                <strong>Respeito ao Processo</strong>
-                <p>
-                    Cada burger é grelhado na hora, garantindo
-                    o máximo de sabor e suculência.
-                </p>
+            <p class="mb-1">Sem congelados</p>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-danger" style="width: 100%">100%</div>
             </div>
 
-            <div class="list-group-item">
-                <strong>Carinho de Ponta a Ponta</strong>
-                <p>
-                    Do momento em que acendemos a chapa até a
-                    entrega na sua porta, cuidamos de cada detalhe.
-                </p>
+            <p class="mb-1">Grelhado na hora</p>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-success" style="width: 100%">100%</div>
             </div>
+        </section>
 
-        </div>
+        <!-- List group -->
+        <section class="my-5">
+            <div class="list-group">
+
+                <div class="list-group-item">
+                    <strong>Frescor Diário</strong>
+                    <p class="mb-0">Moldamos nossas carnes todos os dias. Nada entra no freezer.</p>
+                </div>
+
+                <div class="list-group-item">
+                    <strong>Respeito ao Processo</strong>
+                    <p class="mb-0">Cada burger é grelhado na hora, garantindo o máximo de sabor e suculência.</p>
+                </div>
+
+                <div class="list-group-item">
+                    <strong>Carinho de Ponta a Ponta</strong>
+                    <p class="mb-0">Do momento em que acendemos a chapa até a entrega na sua porta, cuidamos de cada
+                        detalhe.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <a href="https://wa.me/5512911112222" class="whatsapp" target="_blank">Peça pelo WhatsApp</a>
+
+    <footer>
+        <p class="mb-0">© 2026 BURGIVO - Hambúrguer artesanal</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

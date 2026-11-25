@@ -1,109 +1,254 @@
-body {
-background-color: rgb(255, 254, 209);
-margin: 0;
-font-family: Arial, sans-serif;
+/* GERAL */
+
+html {
+    scroll-behavior: smooth;
 }
 
-/* CABEÇALHO */
+body {
+    color: white;
+    background-color: rgb(158, 92, 25);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color:rgb(255, 170, 33);
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+
+
+
 
 header {
-background-color: rgb(223, 115, 43);
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-h1 {
-margin: 0;
-color: rgb(255, 255, 255);
+.navbar {
+    background-color: rgb(176, 74, 6);
+    padding: 15px 0;
 }
 
-nav a {
-color: rgb(255, 255, 255);
-text-decoration: none;
-margin-left: 25px;
-font-size: 18px;
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
 }
 
-nav a:hover {
-text-decoration: underline;
+.logo {
+    height: 80px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
-/* APRESENTAÇÃO */
-
-.apresentacao {
-text-align: center;
-max-width: 900px;
-margin: 40px auto;
-padding: 20px;
+.nav-link {
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
 }
 
-.apresentacao h2 {
-color: rgb(150, 60, 20);
-margin-bottom: 25px;
+.nav-link:hover {
+    text-decoration: underline;
+    color: white;
 }
 
-.apresentacao p {
-font-size: 17px;
-line-height: 1.5;
+
+.hero {
+    background: linear-gradient(rgb(176, 74, 6), rgb(255, 152, 48));
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
 }
 
-/* CARROSSEL */
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+}
+
+.hero .btn {
+    margin: 5px;
+}
+
+
+
+
+
+.diferenciais {
+    color: white;
+    text-align: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+
+.diferenciais h3 {
+    color: rgb(255, 170, 33);
+    font-size: 22px;
+}
+
+
+
+
 
 .carrossel {
-max-width: 1000px;
-margin: 40px auto;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 15px;
 }
 
 .carrossel h2 {
-text-align: center;
-margin-bottom: 25px;
+    color: white;
+    text-align: center;
+}
+
+.carrossel .carousel {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .carrossel img {
-height: 600px;
-object-fit: cover;
+    height: 600px;
+    object-fit: cover;
 }
 
-/* PRODUTOS */
+
+
+
 
 .produtos {
-text-align: center;
-margin: 50px auto;
+    text-align: center;
+    margin: 50px auto;
 }
 
-.produtos h2 {
-margin-bottom: 30px;
+.card {
+    background-color: rgb(255, 239, 180);
+    border: 3px solid brown;
+    border-radius: 20px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
 }
 
-.cards {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-max-width: 1000px;
-margin: auto;
-gap: 20px;
+.card:hover {
+    transform: scale(1.03);
 }
 
-.cards div {
-background-color: rgb(255, 239, 180);
-border: 3px solid brown;
-width: 180px;
-height: 230px;
-border-radius: 20px;
-
-display: flex;
-justify-content: center;
-align-items: center;
-
-font-size: 25px;
-
+.card img {
+    border-radius: 17px 17px 0 0;
 }
 
-/* EFEITO NOS CARDS */
-
-.cards div:hover {
-transform: scale(1.03);
+.card-title {
+    color: rgb(150, 60, 20);
+    font-weight: bold;
 }
 
+.card strong {
+    color: rgb(150, 60, 20);
+    font-size: 24px;
+}
+
+
+
+
+.perguntas {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+
+
+
+.list-group-item {
+    background-color: rgb(255, 239, 180);
+}
+
+.list-group-item:hover {
+    background-color: rgb(255, 225, 140);
+}
+
+.btn-enviar {
+    background-color: rgb(223, 115, 43);
+    color: white;
+}
+
+.btn-enviar:hover {
+    background-color: rgb(150, 60, 20);
+    color: white;
+}
+
+
+
+/* botao do whats */
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    background-color: rgb(37, 211, 102);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp:hover {
+    background-color: rgb(30, 170, 80);
+    color: white;
+}
+
+
+
+/* rodape */
+
+footer {
+    background-color: rgb(150, 60, 20);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+
+
+/* ajudte para celular */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .carrossel img {
+        height: 250px;
+    }
+
+    .whatsapp {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+}
